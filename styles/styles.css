@@ -50,6 +50,8 @@ h1 {
     position: absolute;
     width: 100%;
     top: 0;
+    margin: 0;
+    padding: 0;
     z-index: 2;
     background-color: #7d92ad;
     transform: scaleY(0.8);
@@ -115,7 +117,7 @@ h1 {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(300deg);
+        transform: rotate(365deg);
     }
 }
 
@@ -132,3 +134,40 @@ h1 {
     }
   }
 
+#boven {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #cbbaaa ;
+}
+#rechts {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+ align-items: center;
+    transform: rotate(90deg);
+    z-index: 400;
+    background-color: #cbbaaa;
+}
+
+#onder {
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+z-index: 400;
+    background-color: #cbbaaa;
+
+}
+
+#links {
+    position: absolute;
+    left: 0;
+    transform: rotate(270deg) ;
+    background-color: #cbbaaa;
+    z-index: 400;
+}
+
+.zijkantTekst {
+    font-size: 30px;
+}
