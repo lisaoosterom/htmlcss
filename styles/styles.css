@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'CustomFont';
+   
+         url('styles/dayposterblacknf-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('dayposterblacknf-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+      
+  }
+* {
+
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: hotpink;
+}
+
+body {
+
+    text-align: center;
+}
+
+h1 {
+    font: CustomFont;
+}
+
+@media screen and (max-width: 767px) {
+    #lucht {
+        opacity: 1;
+       
+    }
+   
+}
+@media screen and (min-width: 768px) {
+    #lucht {
+        
+    }
+}
+
+#vrouwtjes {
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    margin: 0 auto;
+    z-index: 3;
+    transform: scale(0.7);
+
+}
+#achtergrondHorizontal{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: #7d92ad;
+    transform: scaleY(0.8);
+
+}
+
+#achtergrondVertical {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #7d92ad;
+
+}
+
+@media screen and (max-width: 767px) {
+    #achtergrondVertical  {
+        opacity: 1;
+       
+    }
+    #achtergrondHorizontal{
+        opacity: 0;
+    }
+   
+}
+@media screen and (min-width: 768px) {
+    #achtergrondVertical  {
+        opacity: 0;
+       
+    }
+    #achtergrondHorizontal {
+        opacity: 1;
+    }
+   
+}
+
+#vrouwtjeBlauw:hover {
+    transform: translateX(-10px);
+}
+
+#vrouwtjeGeel:hover {
+    transform: translateX(-10px);
+}
+#vrouwtjeBruin_3:hover {
+    transform: translateX(-10px);
+}
+#hotelteksten {
+    width: 1vw;
+    height: 1vh;
+    z-index: 100;
+    background-color: #cbbaaa;
+    transform: scaleX(1.9);
+    transform: scaleY(0.5);
+    position: relative;
+    width: 100%;
+    align-items: left;
+    animation: rotate 3s infinite ;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(300deg);
+    }
+}
+
+#auto_3 {
+    animation: auto 2s infinite;
+  }
+  
+  @keyframes auto {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
