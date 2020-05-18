@@ -1,40 +1,45 @@
-
 @font-face {
-    font-family: 'CustomFont';
-   
-         url('styles/dayposterblacknf-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('dayposterblacknf-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-      
+    font-family: 'Koloss';
+    src:  url('styles/Koloss.ttf') format('truetype');
   }
 * {
-
-    margin: auto;
+  margin: auto;
     padding: 0;
-    box-sizing: border-box;
-    border: hotpink;
+    
 }
 
 body {
 
     text-align: center;
+    font-family: Koloss;
+    background-color: #E8C54D;
 }
+
+
 
 h1 {
-    font: CustomFont;
+    z-index: 600;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    color: #e5dcdd;
+    font-size: 2,5em;
+ 
 }
 
-@media screen and (max-width: 767px) {
-    #lucht {
-        opacity: 1;
-       
-    }
-   
+h2 {
+  z-index: 600;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  text-align: center;
+  color: #e5dcdd;
+  font-size: 2em; 
 }
-@media screen and (min-width: 768px) {
-    #lucht {
-        
-    }
-}
+
+
+/* -- lucht */
 
 #vrouwtjes {
     position: absolute;
@@ -46,7 +51,177 @@ h1 {
     transform: scale(0.7);
 
 }
-#achtergrondHorizontal{
+
+#vrouwtjeBlauw:hover {
+    transform: translateX(-20px);
+}
+
+#vrouwtjeBlauw:active #Vector_3  {
+    fill: hotpink;
+}
+#vrouwtjeGeel:hover {
+    transform: translateX(-20px);
+}
+
+#vrouwtjeGeel:active #Vector_10 {
+    fill: hotpink;
+}
+#vrouwtjeBruin_3:hover {
+    transform: translateX(-20px);
+}
+#vrouwtjeBruin_3:active #Vector_20 {
+    fill: hotpink;
+}
+/* -- teksen zijkant */ 
+#hotelteksten {
+    width: 1vw;
+    height: 1vh;
+    z-index: 100;
+    background-color: #cbbaaa;
+    transform: scaleX(1.9);
+    transform: scaleY(0.5);
+    position: relative;
+    width: 100%;
+    align-items: left;
+    animation: rotate 3s infinite ;
+    display: none;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(365deg);
+    }
+}
+
+#boven {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #cbbaaa ;
+    font-family: Koloss;
+    color: #997E65;
+  margin: 10;
+  z-index: 500;
+ 
+}
+#rechts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: scaleX(-1) scaleY(-1);    
+    z-index: 400;
+    background-color: #cbbaaa;
+    font-family: Koloss;
+    color: #997E65;
+}
+
+#onder {
+    position: absolute;
+    width: 100%;
+    bottom:0 ;
+z-index: 400;
+    background-color: #cbbaaa;
+    font-family: Koloss;
+    color: #997E65;
+
+}
+
+#links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: scaleX(-1) scaleY(-1);
+    background-color: #cbbaaa;
+    z-index: 700;
+    font-family: Koloss;
+    color: #997E65;
+}
+
+.zijkantTekst {
+    font-size: 20px;
+   padding: 10px;
+}
+
+#links:hover {
+    transform: scaleX(1) scaleY(1);
+    color:  #cbbaaa;
+    background-color: #997E65;
+}
+
+#rechts:hover {
+    transform: scaleX(1) scaleY(1);
+    color:  #cbbaaa;
+    background-color: #997E65;
+}
+#boven:hover {
+    transform: scaleX(-1) scaleY(-1);
+    color:  #cbbaaa;
+    background-color: #997E65;
+}
+#onder:hover {
+    transform: scaleX(-1) scaleY(-1);
+    color:  #cbbaaa;
+    background-color: #997E65;
+}
+
+
+/* -- auto  */ 
+#auto_3 {
+    animation: auto 4s infinite;
+    transform: scaleX(-1) 
+  }
+  
+  @keyframes auto {
+    0% {
+      transform: translateX(100%);
+    }
+   
+    100% {
+      transform: translateX(-100%)
+    }
+  }
+#auto {
+  
+    animation: auto2 3s infinite
+
+}
+@keyframes auto2 {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(100%)
+    }
+  }
+
+
+/* -- zon  */ 
+  #zon {
+    animation: zon 4s infinite;
+  }
+  
+  @keyframes zon {
+    0% {
+      transform: rotate(0deg);
+      
+  
+    }
+    100% {
+      transform: rotate(360deg);
+  
+    }
+  }
+
+  /* --- ACHTERGROND --*/
+  #achtergrondHorizontal{
     position: absolute;
     width: 100%;
     top: 0;
@@ -54,17 +229,37 @@ h1 {
     padding: 0;
     z-index: 2;
     background-color: #7d92ad;
-    transform: scaleY(0.8);
+    animation:filter 4s infinite;
+}
+  
 
+@keyframes filter {
+    0% {
+filter: sepia(0%);
+    }
+    100% {
+filter: sepia(50%);
+    }
 }
 
 #achtergrondVertical {
     position: absolute;
-    width: 100%;
-    top: 0;
+transform: scale(1.35);
+   right:0;
+   left: 0;
+    bottom: 0;
+    top:0;
     z-index: 1;
     background-color: #7d92ad;
-
+    animation: filterVertical 4s infinite;
+}
+@keyframes filterVertical {
+    0% {
+filter: sepia(0%);
+    }
+    100% {
+filter: sepia(50%);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -87,87 +282,63 @@ h1 {
     }
    
 }
-
-#vrouwtjeBlauw:hover {
-    transform: translateX(-10px);
+  /* --- golfjes --*/
+#golfjes_2 {
+animation: golfjesFlaot 5s infinite;
 }
 
-#vrouwtjeGeel:hover {
-    transform: translateX(-10px);
-}
-#vrouwtjeBruin_3:hover {
-    transform: translateX(-10px);
-}
-#hotelteksten {
-    width: 1vw;
-    height: 1vh;
-    z-index: 100;
-    background-color: #cbbaaa;
-    transform: scaleX(1.9);
-    transform: scaleY(0.5);
-    position: relative;
-    width: 100%;
-    align-items: left;
-    animation: rotate 3s infinite ;
-
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
+@keyframes golfjesFlaot {
+    from {
+        transform: translate(0, 0px)
+    }
+    50% {
+        transform: translate(5px, 15px);
     }
     100% {
-        transform: rotate(365deg);
+        transform: translate(0, -0px)
     }
 }
-
-#auto_3 {
-    animation: auto 2s infinite;
-  }
-  
-  @keyframes auto {
-    0% {
-      transform: translateX(0px);
+#golfjes_3 {
+    animation: golfjesFlaot1 3s infinite;
     }
-    100% {
-      transform: translateX(100%)
+    
+    @keyframes golfjesFlaot1 {
+        from {
+            transform: translate(0, 0px)
+        }
+        65% {
+            transform: translate(0, 10px);
+        }
+        100% {
+            transform: translate(0, -0px)
+        }
     }
-  }
 
-#boven {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    background-color: #cbbaaa ;
-}
-#rechts {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    #golfjes_6 {
+        animation: golfjesFlaot2 6s infinite;
+        }
+        
+        @keyframes golfjesFlaot2 {
+            from {
+                transform: translate(0, 0px)
+            }
+            50% {
+                transform: translate(15px, -5px);
+            }
+            100% {
+                transform: translate(0, -0px)
+            }
+        }
 
- align-items: center;
-    transform: rotate(90deg);
-    z-index: 400;
-    background-color: #cbbaaa;
-}
+ #zeeZand   #Vector {
+            transform:scaleX(1.5)
+        
+        }
 
-#onder {
-    position: absolute;
-    width: 100%;
-    bottom:0 ;
-z-index: 400;
-    background-color: #cbbaaa;
+       #vrouwtjeIndeZee3 {
+           transform: translateX(20px;)
+       }
 
-}
-
-#links {
-    position: absolute;
-    left: 0;
-    transform: rotate(270deg) ;
-    background-color: #cbbaaa;
-    z-index: 400;
-}
-
-.zijkantTekst {
-    font-size: 30px;
+#lucht_2 {
+    transform: translateY(30px;)
 }
