@@ -25,6 +25,7 @@ h1 {
     text-align: center;
     color: #e5dcdd;
     font-size: 2,5em;
+    letter-spacing: 3px;
  
 }
 
@@ -36,6 +37,7 @@ h2 {
   text-align: center;
   color: #e5dcdd;
   font-size: 2em; 
+  letter-spacing: 3px;
 }
 
 
@@ -47,7 +49,7 @@ h2 {
     align-items: center;
     top: 0;
     margin: 0 auto;
-    z-index: 3;
+    z-index: 10;
     transform: scale(0.7);
 
 }
@@ -57,17 +59,15 @@ h2 {
 }
 
 #vrouwtjeBlauw:active #Vector_3  {
-   
-    fill: hotpink;
+    fill: #e5dcdd;
 }
 #vrouwtjeGeel:hover {
     transform: translateX(-20px);
 }
 
 #vrouwtjeGeel:active #Vector_10 {
-    fill: hotpink;
     transform-origin: 50% 50%;
-    transform: scale(1.3)
+    transform: scale(1.9);
 transform-box: fill-box;
 
 }
@@ -75,7 +75,7 @@ transform-box: fill-box;
     transform: translateX(-20px);
 }
 #vrouwtjeBruin_3:active #Vector_20 {
-    fill: hotpink;
+    fill: #351a11;
 }
 /* -- teksen zijkant */ 
 #hotelteksten {
@@ -178,7 +178,7 @@ z-index: 400;
 }
 
  #auto_3 {
-    animation: auto 4s infinite;
+    animation: auto 4s ease infinite;
     transform: scaleX(-1) 
   }
   
@@ -192,10 +192,11 @@ z-index: 400;
     }
   }
 
-#auto {
-    animation: auto2 4s infinite;
+  .animate {
+    animation: auto2 4s ease infinite;
     transform: scaleX(-1) 
   }
+
 @keyframes auto2 {
     0% {
       transform: translateX(0px);
@@ -206,24 +207,22 @@ z-index: 400;
   }
 
 /* -- zon  */ 
-  #zon {
-    animation: zon 4s infinite;
+  .zonnetje {
+    animation: zon 4s ease;
   }
   
   @keyframes zon {
     0% {
-      transform: rotate(0deg);
-      
-  
+    transform: rotate(0deg);
+
     }
     100% {
-      transform: rotate(360deg);
-  
+     transform: rotate(360deg);
     }
   }
 
   /* --- ACHTERGROND --*/
-  #achtergrondHorizontal{
+  #achtergrondHorizontal {
     position: absolute;
     width: 100%;
     top: 0;
@@ -231,7 +230,10 @@ z-index: 400;
     padding: 0;
     z-index: 2;
     background-color: #7d92ad;
-    animation:filter 4s infinite;
+  }
+  .horizontaal{
+ 
+    animation:filter 4s ease;
 }
   
 
@@ -315,8 +317,7 @@ filter: sepia(50%);
             transform: translate(0, -0px)
         }
     }
-
-    #golfjes_6 {
+ #golfjes_6 {
         animation: golfjesFlaot2 6s infinite;
         }
         
@@ -338,10 +339,48 @@ filter: sepia(50%);
         }
 
        #vrouwtjeIndeZee3 {
-           transform: translateX(20px;)
+           transform: translateX(20px)
        }
 
 #lucht_2 {
-    transform: translateY(30px;)
+    transform: translateY(30px)
 }
 
+/* 
+scale 
+media querys 
+
+*/
+/*
+.badpak{
+    animation: color 4s ease-in;
+}
+@keyframes color {
+    0% {
+        fill: hotpink;
+    }
+    100% {
+        fill: indigo;
+    }
+}
+*/
+
+/* -- DE PIER-- */
+#dePier {
+    position: absolute;
+    left: 0;
+    top: 40%;
+z-index: 4;
+}
+
+@media screen and (max-width: 767px) {
+    h1 , h2{
+        color: #ffd9ad;
+       
+    }
+    @media screen and (max-width: 767px) {
+       #dePier{
+            top: 25%;
+            left: -20px;
+           
+        }
