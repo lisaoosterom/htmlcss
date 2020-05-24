@@ -100,7 +100,8 @@ function autoUitAan() {
 
 Waar ik wel tegen aan liep was de teksten aan de zijkant, hoe ik ze helemaal aan de zijkanten kon laten uitlijnen lukte mij niet. Ik probeerde dit eerst door transform:rotate(180deg), een klasgenoot vertelde mij dat het makkelijker ging met 
 ```
-translate  writing-mode: vertical-rl; & transform: scaleX(-1) scaleY(-1); 
+translate  writing-mode: vertical-rl; 
+transform: scaleX(-1) scaleY(-1); 
 
 ```
 Het leek mij wel tof om een soort sunset filter over de poster te animeren tegelijker tijd met de ondergaande zon. Dit heb ik gedaan met css animatie en keyframes. Om nog een vorm van interactie toe te passen heb ik besloten om deze twee animaties te laten triggeren op het moment dat de z van zon wordt ingedrukt . 
