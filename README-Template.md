@@ -6,13 +6,13 @@ Voor het vak web animatie kreeg ik de oprdacht een kunstwerkje te animeren op ba
 ## Mijn kunstwerkje
 
 Mijn kunstwerkje heb ik gevonden op pinterest (https://nl.pinterest.com/pin/530721137342038093/), het is een poster van Scheveningen uit de jaren '60. 
-! [] (images/52ffe69cdaa428b1542be68814941eefd9bf0c25_492x779.png)
+! [Gekozen poster] (/images/52ffe69cdaa428b1542be68814941eefd9bf0c25_492x779.png)
 
 
 
 Na wat research ben ik er achter gekomen dat de poster waarschijnlijk is gemaakt op Scheveningen weer populair te maken, nadat de buitenland vakanties in de jaren '60 erg populair waren. De hotels op Scheveningen kwamen leeg te staan, dit is natuurlijk niet de bedoeling. Samen met mijn gekozen poster was er nog een poster met hoogst waarschijnlijk hetzelfde doel gemaakt. 
 
-! [] (images/4a9f16df6b53b3e5701a798688c53f2e78bb6ab3_492x736.jpg) 
+! [Poster uit de zelfde serie] (images/4a9f16df6b53b3e5701a798688c53f2e78bb6ab3_492x736.jpg) 
 Ik zelf ben opgegroeid in Den Haag en woon hier dan nog steeds en ik kan beamen hoe geweldig het strand in Den Haag is, de poster trok mij vandaar erg aan. Ook had ik bij de opdracht voor Typografie van Diederik Corvers een vergelijkbaar font uitgekozen waardoor de stijl van de poster mij ook erg aansprak.
 
 Mijn eerste gedachten qua interactie was de golfjes laten wiggelen, de zon onder en op laten gaan, de autos laten bewegen en de vrouwtjes laten bewegen wanneer er gehoovert wordt bv..
@@ -99,7 +99,8 @@ function autoUitAan() {
 
 
 Waar ik wel tegen aan liep was de teksten aan de zijkant, hoe ik ze helemaal aan de zijkanten kon laten uitlijnen lukte mij niet. Ik probeerde dit eerst door transform:rotate(180deg), een klasgenoot vertelde mij dat het makkelijker ging met 
-```translate  writing-mode: vertical-rl; & transform: scaleX(-1) scaleY(-1); 
+```
+translate  writing-mode: vertical-rl; & transform: scaleX(-1) scaleY(-1); 
 
 ```
 Het leek mij wel tof om een soort sunset filter over de poster te animeren tegelijker tijd met de ondergaande zon. Dit heb ik gedaan met css animatie en keyframes. Om nog een vorm van interactie toe te passen heb ik besloten om deze twee animaties te laten triggeren op het moment dat de z van zon wordt ingedrukt . 
