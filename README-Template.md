@@ -6,13 +6,14 @@ Voor het vak web animatie kreeg ik de oprdacht een kunstwerkje te animeren op ba
 ## Mijn kunstwerkje
 
 Mijn kunstwerkje heb ik gevonden op pinterest (https://nl.pinterest.com/pin/530721137342038093/), het is een poster van Scheveningen uit de jaren '60. 
-! [Gekozen poster] (/images/52ffe69cdaa428b1542be68814941eefd9bf0c25_492x779.png)
+! [Gekozen poster (https://github.com/lisaoosterom/htmlcss/blob/master/images/52ffe69cdaa428b1542be68814941eefd9bf0c25_492x779.png)
 
-
+(/images/52ffe69cdaa428b1542be68814941eefd9bf0c25_492x779.png)
 
 Na wat research ben ik er achter gekomen dat de poster waarschijnlijk is gemaakt op Scheveningen weer populair te maken, nadat de buitenland vakanties in de jaren '60 erg populair waren. De hotels op Scheveningen kwamen leeg te staan, dit is natuurlijk niet de bedoeling. Samen met mijn gekozen poster was er nog een poster met hoogst waarschijnlijk hetzelfde doel gemaakt. 
 
-! [Poster uit de zelfde serie] (images/4a9f16df6b53b3e5701a798688c53f2e78bb6ab3_492x736.jpg) 
+! [Poster uit de zelfde serie] (https://github.com/lisaoosterom/htmlcss/blob/master/images/4a9f16df6b53b3e5701a798688c53f2e78bb6ab3_492x736.jpg)
+(images/4a9f16df6b53b3e5701a798688c53f2e78bb6ab3_492x736.jpg) 
 Ik zelf ben opgegroeid in Den Haag en woon hier dan nog steeds en ik kan beamen hoe geweldig het strand in Den Haag is, de poster trok mij vandaar erg aan. Ook had ik bij de opdracht voor Typografie van Diederik Corvers een vergelijkbaar font uitgekozen waardoor de stijl van de poster mij ook erg aansprak.
 
 Mijn eerste gedachten qua interactie was de golfjes laten wiggelen, de zon onder en op laten gaan, de autos laten bewegen en de vrouwtjes laten bewegen wanneer er gehoovert wordt bv..
