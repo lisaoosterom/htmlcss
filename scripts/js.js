@@ -6,6 +6,10 @@
 
   */
 
+  /* var aanmaken en koppelen aan ID , die alleen is gedeclareerd in de html
+  dmv event listener laten weten dat er iets moet gebeuren met clcik, namelijk de funcite uit/aan.
+   dmv een click de class animatie (class waar in css de animatie is gedefinieerd) laten toggelen,dus aan/uitt*/
+
  var groen = document.querySelector('#groen');
  var auto = document.querySelector('#auto');
 
@@ -15,7 +19,8 @@ function autoUitAan() {
     auto.classList.toggle("animate");
  }
 
- /*
+ /* Probeersels die niet werkten of niet leuk waren
+
  var pierSpan = document.querySelector('#spanPier');
  var pier = document.querySelector('#dePierID');
  
@@ -59,6 +64,9 @@ function toggle (event){
   };
 }
 */
+
+/* zelfde idee als net, maar dan met een keypress evenement en een if statement. 
+dus if d z is ingedrukt, toggle de css animatie (class zonnetne en horizontaal). Als dat niet het geval is doe niks */
 var zonID = document.querySelector("#zon");
 var filter = document.querySelector ('#achtergrondHorizontal');
 window.addEventListener('keydown', toggle);
@@ -74,6 +82,7 @@ function toggle (event){
   };
 }
 
+/* zelfde geld voor deze js als de functie hierboven , maar dan met de spatie toets. */
 var vrouwtjes = document.querySelector ('#vrouwtjes');
 window.addEventListener('keydown', flip);
 

@@ -43,7 +43,7 @@ h2 {
 }
 
 
-/* -- lucht */
+/* -- vrouwtjes */
 
 #vrouwtjes {
     position: absolute;
@@ -56,6 +56,7 @@ h2 {
    
 
 }
+/* deze animatie met spatie laten toggelen met js */
 .flipVrouwtjes {
     animation: flip 1s ease-out;
 }
@@ -67,6 +68,8 @@ h2 {
     transform: scaleX(1);
 }
 }
+/* hover en ative vrouwtjes  */
+
 #vrouwtjeBlauw:hover {
     transform: translateX(-20px);
     transform: translateY(10px);
@@ -121,6 +124,8 @@ transform-box: fill-box;
     }
 }
 */
+
+/* positionering van de teksten plus hover states*/
 #boven {
     position: absolute;
     width: 100%;
@@ -199,6 +204,7 @@ z-index: 400;
     background-color: #997E65;
 }
 
+/* auto animatie dmv keyframes en cubic bezier, laten togelen met js dmv click op groene balk (geld voor de animate animatie*/
  #auto_3 {
     animation: auto 4s cubic-bezier(.37,.50,1,.3) infinite;
     transform: scaleX(-1);
@@ -228,7 +234,7 @@ z-index: 400;
     }
   }
 
-/* -- zon  */ 
+/* -- zon , laten toggelen dmv z toets samen met de sepia achtergrond  */ 
   .zonnetje {
     animation: zon 4s ease;
   }
@@ -289,9 +295,12 @@ filter: sepia(50%);
     }
 }
 
+/* achtergrond responsive maken */
 @media screen and (max-width: 767px) {
     #achtergrondVertical  {
         opacity: 1;
+      
+
        
     }
     #achtergrondHorizontal{
