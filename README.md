@@ -139,6 +139,7 @@ function toggle (event){
 *[animatie's met keyframes] (https://css-tricks.com/almanac/properties/a/animation/)
 *[sepia filter] (https://css-tricks.com/almanac/properties/b/backdrop-filter/)
 *[hide / toggle js]( https://timdej0ng.github.io/web-animation-19-20/index.html )
+* [cubic bezier tool] (https://cubic-bezier.com/#.37,.76,.73,.32)
 
 
 
