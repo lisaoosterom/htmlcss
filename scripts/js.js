@@ -9,14 +9,23 @@
  var groen = document.querySelector('#groen');
  var auto = document.querySelector('#auto');
 
- 
  window.addEventListener("click", autoUitAan);
-console.log(autoUitAan);
+
 function autoUitAan() {
-     auto.classList.toggle("animate");
-     console.log('hoi');
+    auto.classList.toggle("animate");
  }
 
+ /*
+ var pierSpan = document.querySelector('#spanPier');
+ var pier = document.querySelector('#dePierID');
+ 
+ window.addEventListener('onmouseover', dePier);
+ 
+ function dePier (){
+    {
+     pier.classList.toggle("spanPier");
+    }
+*/
  /*
  document.addEventListener("keydown", function(event) {
   console.log(event.which);
@@ -53,7 +62,6 @@ function toggle (event){
 var zonID = document.querySelector("#zon");
 var filter = document.querySelector ('#achtergrondHorizontal');
 window.addEventListener('keydown', toggle);
-window.addEventListener('touchstart', toggle, false);
 
 
 function toggle (event){
@@ -66,4 +74,17 @@ function toggle (event){
   };
 }
 
+var vrouwtjes = document.querySelector ('#vrouwtjes');
+window.addEventListener('keydown', flip);
+
+
+function flip (event){
+   if(event.keyCode == 32){
+      vrouwtjes.classList.toggle('flipVrouwtjes');
+   }
+   else {
+      
+  };
+
+}
 

@@ -5,6 +5,7 @@
 * {
   margin: auto;
     padding: 0;
+    overflow: hidden;
     
 }
 
@@ -13,6 +14,7 @@ body {
     text-align: center;
     font-family: Koloss;
     background-color: #E8C54D;
+
 }
 
 
@@ -51,11 +53,23 @@ h2 {
     margin: 0 auto;
     z-index: 10;
     transform: scale(0.7);
+   
 
 }
-
+.flipVrouwtjes {
+    animation: flip 1s ease-out;
+}
+@keyframes flip {
+0% {
+    transform: scaleX(-1);
+}
+100% {
+    transform: scaleX(1);
+}
+}
 #vrouwtjeBlauw:hover {
     transform: translateX(-20px);
+    transform: translateY(10px);
 }
 
 #vrouwtjeBlauw:active #Vector_3  {
@@ -63,6 +77,8 @@ h2 {
 }
 #vrouwtjeGeel:hover {
     transform: translateX(-20px);
+    transform: translateY(10px);
+
 }
 
 #vrouwtjeGeel:active #Vector_10 {
@@ -73,11 +89,14 @@ transform-box: fill-box;
 }
 #vrouwtjeBruin_3:hover {
     transform: translateX(-20px);
+    transform: translateY(10px);
 }
 #vrouwtjeBruin_3:active #Vector_20 {
     fill: #351a11;
 }
-/* -- teksen zijkant */ 
+
+
+/* -- teksen zijkant 
 #hotelteksten {
     width: 1vw;
     height: 1vh;
@@ -88,7 +107,7 @@ transform-box: fill-box;
     position: relative;
     width: 100%;
     align-items: left;
-    animation: rotate 3s infinite ;
+    animation: rotate 3s infinite ease-out ;
     display: none;
 
 }
@@ -101,7 +120,7 @@ transform-box: fill-box;
         transform: rotate(365deg);
     }
 }
-
+*/
 #boven {
     position: absolute;
     width: 100%;
@@ -111,8 +130,11 @@ transform-box: fill-box;
     color: #997E65;
   margin: 10;
   z-index: 500;
- 
+  
 }
+
+
+
 #rechts {
     position: absolute;
     top: 0;
@@ -178,8 +200,8 @@ z-index: 400;
 }
 
  #auto_3 {
-    animation: auto 4s ease infinite;
-    transform: scaleX(-1) 
+    animation: auto 4s cubic-bezier(.37,.50,1,.3) infinite;
+    transform: scaleX(-1);
   }
   
   @keyframes auto {
@@ -193,7 +215,7 @@ z-index: 400;
   }
 
   .animate {
-    animation: auto2 4s ease infinite;
+    animation: auto2 4s cubic-bezier(.37,.76,.73,.32) infinite;
     transform: scaleX(-1) 
   }
 
@@ -230,6 +252,7 @@ z-index: 400;
     padding: 0;
     z-index: 2;
     background-color: #7d92ad;
+
   }
   .horizontaal{
  
@@ -255,7 +278,7 @@ transform: scale(1.35);
     top:0;
     z-index: 1;
     background-color: #7d92ad;
-    animation: filterVertical 4s infinite;
+    animation: filterVertical 4s infinite ease;
 }
 @keyframes filterVertical {
     0% {
@@ -288,10 +311,10 @@ filter: sepia(50%);
 }
   /* --- golfjes --*/
   /* --- IDEE : on hover de golfjes pas laten bewegen --*/
-#golfjes_2 {
-    animation: golfjesFloat 5s infinite;
+#golfjes {
+    animation: golfjesFloat 5s infinite ease;
 }
-@keyframes golfjesFlaot {
+@keyframes golfjesFloat{
     from {
         transform: translate(0, 0px)
     }
@@ -303,7 +326,7 @@ filter: sepia(50%);
     }
 }
 #golfjes_3 {
-    animation: golfjesFlaot1 3s infinite;
+    animation: golfjesFlaot1 3s infinite ease-out;
     }
     
     @keyframes golfjesFlaot1 {
@@ -318,7 +341,7 @@ filter: sepia(50%);
         }
     }
  #golfjes_6 {
-        animation: golfjesFlaot2 6s infinite;
+        animation: golfjesFlaot2 6s infinite ease-in;
         }
         
         @keyframes golfjesFlaot2 {
@@ -366,12 +389,14 @@ media querys
 */
 
 /* -- DE PIER-- */
-#dePier {
+.dePier {
     position: absolute;
     left: 0;
     top: 40%;
-z-index: 4;
+    z-index: 4;
 }
+
+
 
 @media screen and (max-width: 767px) {
     h1 , h2{
@@ -382,5 +407,11 @@ z-index: 4;
        #dePier{
             top: 25%;
             left: -20px;
-           
-        }
+}
+
+@media screen and (max-width: 767px) {
+    #vrouwtjes{
+        bottom: -10;
+        scale: 0.8;
+        transform-origin: 50% 50%;}
+    }
