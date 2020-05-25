@@ -85,6 +85,7 @@ Later leerde ik over de keyframe animaties dit paste ik toe bij de autotjes en g
 Later heb ik met behulp van Danny de Vries en Javascript mijn eerste javascript regels geschreven om de auto animatie te laten pauzeren en afspelen. 
 Doordat ik twee achtergronden had met dezelfde id's, omdat ik de laag namen was vergeten lukte de js niet direct, omdat hij gelikt was aan het verkeerde id.
 
+Toggle de animatie (class animatie) als er word gelikt op groen.
 #Toggle animatie :
 ```
  var groen = document.querySelector('#groen');
