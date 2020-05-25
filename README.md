@@ -64,22 +64,22 @@ Animatie vrouwtjes
 ```
 
 Later leerde ik over de keyframe animaties dit paste ik toe bij de autotjes en golfjes. 
-#animatie met keyframes: 
+#animatie met keyframes en cubic bezier dmv de cubic bezier tool 
 ```
-#golfjes {
-    animation: golfjesFloat 5s infinite ease;
-}
-@keyframes golfjesFloat{
-    from {
-        transform: translate(0, 0px)
+ #auto_3 {
+    animation: auto 4s cubic-bezier(.37,.50,1,.3) infinite;
+    transform: scaleX(-1);
+  }
+  
+  @keyframes auto {
+    0% {
+      transform: translateX(100%);
     }
-    50% {
-        transform: translate(5px, 15px);
-    }
+   
     100% {
-        transform: translate(0, -0px)
+      transform: translateX(-100%)
     }
-}
+  }
 
 ```
 Later heb ik met behulp van Danny de Vries en Javascript mijn eerste javascript regels geschreven om de auto animatie te laten pauzeren en afspelen. 
